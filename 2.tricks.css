@@ -1,4 +1,17 @@
-/* To remove a background using css */
+/* To remove a background using css -----------*/
 .class{
   background: transparent;
+}
+
+/* Tricky selection using js and css ---------*/
+
+/* document.querySelectorAll("input[name='vehicleClasses[]']"); */
+input[name='vehicleClasses[]'] {
+  width: 100px;
+  transition: ease-in-out, width .35s ease-in-out;
+}
+
+/* Selecting last 9 elements only */
+.blog-card:nth-last-child(-n+9) {
+  display: block;
 }
