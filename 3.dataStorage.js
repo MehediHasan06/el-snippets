@@ -7,3 +7,9 @@ localStorage.setItem('testObject', JSON.stringify(testObject));
 var retrievedObject = localStorage.getItem('testObject');
 
 console.log('retrievedObject: ', JSON.parse(retrievedObject));
+
+// Remove the storage value 
+localStorage.removeItem('name');
+
+// similar behavior as clicking on a link
+window.location.href = "http://stackoverflow.com";
