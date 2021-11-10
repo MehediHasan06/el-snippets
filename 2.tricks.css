@@ -5,7 +5,7 @@
 
 /* Tricky selection using js and css ---------*/
 
-/* document.querySelectorAll("input[name='vehicleClasses[]']"); */
+/** document.querySelectorAll("input[name='vehicleClasses[]']"); */
 input[name='vehicleClasses[]'] {
   width: 100px;
   transition: ease-in-out, width .35s ease-in-out;
@@ -15,3 +15,6 @@ input[name='vehicleClasses[]'] {
 .blog-card:nth-last-child(-n+9) {
   display: block;
 }
+
+/* Selecting Previous Element */
+/** document.querySelector(".heart-button").previousElementSibling */

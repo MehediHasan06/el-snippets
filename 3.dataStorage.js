@@ -10,3 +10,5 @@ console.log('retrievedObject: ', JSON.parse(retrievedObject));
 
 // Remove the storage value 
 localStorage.removeItem('name');
+
+
