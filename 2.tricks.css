@@ -3,9 +3,8 @@
   background: transparent;
 }
 
-/* Tricky selection using js and css ---------*/
+/* Tricky selection using css ---------*/
 
-/* document.querySelectorAll("input[name='vehicleClasses[]']"); */
 input[name='vehicleClasses[]'] {
   width: 100px;
   transition: ease-in-out, width .35s ease-in-out;
