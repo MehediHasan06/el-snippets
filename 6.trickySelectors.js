@@ -1,9 +1,10 @@
-//* Selecting with attribute selectors
+//* 1.Selecting with attribute selectors
 document.querySelectorAll("input[name='vehicleClasses[]']");
 
-//* Selecting Previous Element
+//* 2.Selecting Previous Element
 document.querySelector(".heart-button").previousElementSibling;
 
+// 3.Kind of depricated. We shouldn't use this.
 //* insertBefore()
 parentNode.insertBefore(newNode, referenceNode);
 // parentNode = In which element we want to insert the new node before the reference node.
@@ -21,6 +22,8 @@ parentNode.insertBefore(newNode, referenceNode);
 //* insertAfter()
 parentNode.insertAfter(newNode, referenceNode);
 
+// 4.Instead we should use before() and after()
+//* before()
 //* after()
 Node.after(...nodes);
 /**
@@ -33,5 +36,7 @@ p.after(span, "Text");
 
 console.log(container.outerHTML);
 // "<div><p></p><span></span>Text</div>"
- * 
+ *
 */
+
+// 5.insertAdjacentElement()
