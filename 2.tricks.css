@@ -14,3 +14,10 @@ input[name='vehicleClasses[]'] {
 .blog-card:nth-last-child(-n+9) {
   display: block;
 }
+
+/* Fillup a hre tag to use as a divider */
+hr{
+  height: 2px;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
