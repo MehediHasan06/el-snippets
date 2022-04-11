@@ -1,5 +1,5 @@
 /* To remove a background using css -----------*/
-.class{
+.class {
   background: transparent;
 }
 
@@ -16,8 +16,16 @@ input[name='vehicleClasses[]'] {
 }
 
 /* Fillup a hre tag to use as a divider */
-hr{
+hr {
   height: 2px;
   background-color: #ccc;
   border: 1px solid #ccc;
+}
+
+/* Control dotted border */
+border {
+  background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 5px 1px;
+  background-repeat: repeat-x;
 }
