@@ -8,17 +8,21 @@ document.querySelectorAll(".container.u-pb-double .button--tundora").forEach(fun
 });
 
 // Use js "Code (JavaScript) triggered goal" from Convert
-(function pollForGoal() {
-  var submitBtn = document.querySelector(".jquery-modal.blocker.current #book-a-demo-new .modal__book__hs-form form .hs_submit.hs-submit input");
-  console.log("Into the goal Poll function");
-  
-  if (submitBtn) {
-    convert.$(".navbar-nav.second_layer .nav-item.active .dropdown-menu.active .subnav:not(.active) span.inline-item").click(function () {
-      	 console.log("clicked !");
-         window._conv_q = window._conv_q || [];
-		_conv_q.push(["triggerConversion", "100025730"]);
-     });
-  } else {
-    setTimeout(pollForGoal, 25);
-  }
-})();
+
+// demo page submit goal
+if(window.location.href.includes("demo")){
+  console.log("Demo page");
+  (function pollFor() {
+    var submitBtn = document.querySelector(".jquery-modal.blocker.current #book-a-demo-new .modal__book__hs-form form .hs_submit.hs-submit input");
+
+    if (submitBtn) {
+      convert.$(".jquery-modal.blocker.current #book-a-demo-new .modal__book__hs-form form .hs_submit.hs-submit input").click(function () {
+        console.log("clicked !");
+        window._conv_q = window._conv_q || [];
+        _conv_q.push(["triggerConversion", "100025730"]);
+      });
+    } else {
+      setTimeout(pollFor, 25);
+    }
+  })();
+}
