@@ -7,14 +7,18 @@ document.querySelectorAll(".container.u-pb-double .button--tundora").forEach(fun
   });
 });
 
-
-(function pollForSecondLevelElem1() {
-  if (document.querySelector(".navbar-nav.second_layer .nav-item .dropdown-menu .nav-link.mob-landing")) {
-    convert.$(".navbar-nav.second_layer .nav-item .dropdown-menu .nav-link.mob-landing").click(function () {
-      window._conv_q = window._conv_q || [];
-      _conv_q.push(["triggerConversion", "100024205"]);
-    });
+// Use js "Code (JavaScript) triggered goal" from Convert
+(function pollForGoal() {
+  var submitBtn = document.querySelector(".jquery-modal.blocker.current #book-a-demo-new .modal__book__hs-form form .hs_submit.hs-submit input");
+  console.log("Into the goal Poll function");
+  
+  if (submitBtn) {
+    convert.$(".navbar-nav.second_layer .nav-item.active .dropdown-menu.active .subnav:not(.active) span.inline-item").click(function () {
+      	 console.log("clicked !");
+         window._conv_q = window._conv_q || [];
+		_conv_q.push(["triggerConversion", "100025730"]);
+     });
   } else {
-    setTimeout(pollForSecondLevelElem1, 25);
+    setTimeout(pollForGoal, 25);
   }
 })();
