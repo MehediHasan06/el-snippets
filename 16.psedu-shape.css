@@ -1,0 +1,25 @@
+/* Tick Sign */
+div:before {
+  position: absolute;
+  height: 15px;
+  width: 5px;
+  border-bottom: 3px solid red;
+  border-right: 3px solid red;
+  content: "";
+  transform: rotate(45deg);
+  left: -25px;
+  top: 2px;
+}
+
+/* Triangle Indicator  */
+div:before {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 12px solid #fee4ff;
+  position: absolute;
+  top: -8px;
+  right: 35px;
+  content: "";
+}
