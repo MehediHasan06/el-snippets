@@ -55,3 +55,8 @@ div::-webkit-scrollbar-thumb {
 div::-webkit-scrollbar:vertical {
   display: none;
 }
+
+/* Hover one element change other under the same parent */
+#a:hover~#b {
+  background: #ccc
+}
